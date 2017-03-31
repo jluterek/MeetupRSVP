@@ -1,0 +1,31 @@
+{
+  "name": "meetuprsvp",
+  "version": "1.0.0",
+  "description": "Auto respond to meetup events.",
+  "main": "handler.js",
+  "scripts": {
+
+    "start": "lambda-local -l handler.js -h handler -e event-samples/test.js -t 30 -E {\\\"MEETUP_API_KEY\\\":\\\"putyourapikeyhere\\\"}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jluterek/MeetupRSVP.git"
+  },
+  "keywords": [
+    "Meetup",
+    "RSVP",
+    "Node",
+    "Lambda"
+  ],
+  "author": "James Luterek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jluterek/MeetupRSVP/issues"
+  },
+  "homepage": "https://github.com/jluterek/MeetupRSVP#readme",
+  "dependencies": {
+    "aws-sdk": "^2.35.0",
+    "meetup-api": "^1.4.9"
+  }
+}
